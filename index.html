@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.5rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的个人网页</h1>
+        <nav>
+            <a href="#about">个人简介</a>
+            <a href="#skills">技能</a>
+            <a href="#experience">工作经历</a>
+            <a href="#projects">项目作品</a>
+            <a href="#contact">联系方式</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>个人简介</h2>
+        <p>你好！我是一名拥有丰富经验的专业人士，专注于 [你的领域]。我的目标是通过 [你专长的技能] 帮助客户实现他们的愿望。</p>
+    </section>
+
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>技能 1</li>
+            <li>技能 2</li>
+            <li>技能 3</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>工作经历</h2>
+        <h3>公司名称 - 职位 (起止时间)</h3>
+        <p>职责描述和成就。</p>
+        <h3>公司名称 - 职位 (起止时间)</h3>
+        <p>职责描述和成就。</p>
+    </section>
+
+    <section id="projects">
+        <h2>项目作品</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/600x400" alt="项目图像 1">
+            <img src="https://via.placeholder.com/600x400" alt="项目图像 2">
+            <img src="https://via.placeholder.com/600x400" alt="项目图像 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>联系方式</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="姓名" required>
+            <input type="email" name="email" placeholder="邮箱" required>
+            <textarea name="message" rows="4" placeholder="留言" required></textarea>
+            <button type="submit">发送</button>
+        </form>
+        <div class="social-links">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 你的名字. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
